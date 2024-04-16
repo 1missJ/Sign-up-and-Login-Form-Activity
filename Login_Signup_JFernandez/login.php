@@ -8,34 +8,38 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
         body {
-            background-color: #D8BFD8; /* Light lavender background */
+             background: linear-gradient(to bottom, #cc33ff 0%, #66ccff 100%);
+              font-family: 'Roboto', sans-serif; 
         }
         .form-container {
-            background-color: #fff; /* White background for the form */
-            padding: 20px; /* Add some padding */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+            background-color: #FFFAFA; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
-        .form-container h4 {
-            color: #343a40; /* Dark text color */
+        .form-container h5 {
+            color: #343a40;
+             margin-bottom: 20px;
+            margin-top: 20px;
         }
         .form-container .alert {
-            margin-bottom: 10px; /* Add some space below alerts */
+            margin-bottom: 10px; 
         }
         .form-container input[type="text"],
         .form-container input[type="password"] {
-            margin-bottom: 10px; /* Add some space below inputs */
+            margin-bottom: 10px;
         }
         .form-container button[type="submit"] {
-            margin-top: 10px; /* Add some space above the submit button */
-            width: 100%; /* Set button width to 100% */
+            margin-top: 15px; 
+            width: 100%;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
         <form class="form-container shadow w-450 p-3" action="php/login.php" method="post">
-            <h4 class="display-4 text-center fs-1">Login to Your Account</h4>
+            <h5 class="display-4 text-center fs-1">Login to Your Account</h5>
 
             <?php if(isset($_GET['error'])){ ?>
                 <div class="alert alert-danger" role="alert">
