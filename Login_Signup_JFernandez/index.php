@@ -8,19 +8,22 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
         body {
-            background-color: #D8BFD8; 
+             background: linear-gradient(to bottom, #cc33ff 0%, #66ccff 100%);
+              font-family: 'Roboto', sans-serif; 
         }
         .form-container {
-            background-color: #fff; 
+            background-color: #FFFAFA; 
             padding: 20px; 
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
-        .form-container h4 {
-            color: #343a40; 
+        .form-container h5 {
+            color: #343a40;
+            margin-bottom: 20px;
+            
         }
         .form-container .alert {
-            margin-bottom: 10px; 
+            margin-bottom: 20px; 
         }
         .form-container input[type="text"],
         .form-container input[type="password"] {
@@ -34,13 +37,14 @@
             display: block; 
             text-align: center; 
             color: #6c757d; 
+            margin-bottom: 10px; 
         }
     </style>
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
         <form class="form-container shadow w-450" action="php/signup.php" method="post">
-            <h4 class="display-4 text-center fs-1">Create an Account</h4>
+            <h5 class="display-4 text-center fs-1">Create an Account</h5>
 
             <?php if(isset($_GET['error'])){ ?>
                 <div class="alert alert-danger" role="alert">
