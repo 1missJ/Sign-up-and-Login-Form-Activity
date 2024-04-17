@@ -62,6 +62,9 @@
             </div> 
 
             <button type="submit" class="btn btn-primary">Login</button>
+            <div class="text-center">
+                <a href="index.php">Sign Up</a>
+            </div>
         </form>
     </div>
 </body>
