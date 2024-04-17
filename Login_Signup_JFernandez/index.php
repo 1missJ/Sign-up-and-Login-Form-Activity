@@ -30,14 +30,14 @@
             margin-bottom: 10px; 
         }
         .form-container button[type="submit"] {
-            margin-top: 10px; 
+            margin-top: 10px;
+            width: 100%;
+            height: 100%; 
         }
-        .form-container .link-secondary {
-            margin-top: 10px; 
-            display: block; 
-            text-align: center; 
-            color: #6c757d; 
-            margin-bottom: 10px; 
+            .form-container .btn-secondary {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -89,7 +89,7 @@
             </div> 
 
             <button type="submit" class="btn btn-primary">Sign up</button>
-            <a href="login_page.php" class="link-secondary">Login</a>
+            <a href="login_page.php" class="btn btn-secondary">Login</a>
         </form>
     </div>
 </body>
